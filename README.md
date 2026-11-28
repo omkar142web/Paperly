@@ -82,7 +82,7 @@ flowchart LR
     U[Student] --> B[Study Desk<br/>index.html]
     B -->|supabase-js v2 via CDN| A[Supabase Auth]
     B -->|PostgREST reads and writes| D[(Postgres<br/>tasks + subjects)]
-    A --> R[Row Level Security<br/>user_id = auth.uid()]
+    A --> R["Row Level Security<br/>user_id = auth.uid()"]
     D --- R
 ```
 
