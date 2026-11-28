@@ -1904,8 +1904,7 @@
 
       <div class="toolbar">
         <nav class="tabs" id="tabs" aria-label="Sections">
-          <button class="tab" data-view="Prior">Prior <i></i></button
-          ><button class="tab" data-view="Daily">Daily <i></i></button
+          <button class="tab" data-view="Daily">Daily <i></i></button
           ><button class="tab" data-view="Completions">
             Completions <i></i></button
           ><button class="tab" data-view="Backlog">Backlog <i></i></button
@@ -2100,7 +2099,6 @@
                 <option>Chores</option>
                 <option>Boredom</option>
                 <option>Hobbies</option>
-                <option>Prior</option>
               </select>
             </div>
             <div class="field">
@@ -2172,8 +2170,7 @@
           <div class="hint">
             <b>Daily</b> is for today, <b>Backlog</b> for pending study work,
             <b>Chores</b> for life admin, <b>When bored</b> for low-effort wins,
-            <b>Hobbies</b> for personal interests, and <b>Prior</b> for must-do
-            tasks.
+            <b>Hobbies</b> for personal interests.
           </div>
         </aside>
       </div>
@@ -2299,7 +2296,6 @@
         "Chores",
         "Boredom",
         "Hobbies",
-        "Prior",
       ]);
       const PRIORITIES = new Set(["High", "Medium", "Low"]);
       const COLORS = [
@@ -3269,7 +3265,6 @@
             All: "All tasks",
             Boredom: "When bored",
             Hobbies: "Hobbies",
-            Prior: "Prior tasks",
           }[currentView] || currentView + " tasks";
         $("prioText").textContent =
           pr === "all" ? "Priority" : "Priority: " + pr;
