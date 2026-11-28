@@ -338,6 +338,11 @@
         outline: 2px solid var(--accent);
         outline-offset: 2px;
       }
+      @media (hover: none) {
+        .pill-select:focus-within {
+          outline: none;
+        }
+      }
       .pill-select select {
         position: absolute;
         inset: 0;
